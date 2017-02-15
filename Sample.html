@@ -3,14 +3,16 @@
 <html>
 <head>
 	<title>Sample Register Page</title>
+	<link href="css/demo.css" rel="stylesheet">
 </head>
 <body>
-	<SPAN class="logo pull-left"></SPAN>
+	<H1 class="logo pull-left">Rozgaar</H1>
 	<form id="RegForm" action="demo.php" method="POST" autocomplete="ON">
-		<fieldset>
+		<fieldset id="autoFillTab">
 			FamilyID:<input type="text" placeholder="Enter Family Id" name="famID"><br>
 			JobCardID:<input type="text" placeholder="Enter Job Card Id" name="jobID"><br>
 		</fieldset>
+		<div class="staticTab">
 			Name:<input type="text" placeholder="Enter Family Id" name="name"><br>
 			Date:<input id="date" name="date"><br>
 			<script type="text/javascript">
@@ -21,7 +23,9 @@
 			<INPUT TYPE="Radio" Name="Gender" Value="Male">Male
 			<INPUT TYPE="Radio" Name="Gender" Value="Female">Female
 			<INPUT TYPE="Radio" Name="Gender" Value="Other">Other
-			<br>Age:<input type="number" name="age">
+			<br>Age:<input type="number" name="age"><br>
+			<center><input type="submit" value="Register"><br></center>
+		</div>
 		</form>
 </body>
 </html>
